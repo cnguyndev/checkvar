@@ -57,7 +57,7 @@
 
         <div>
            <?php
-            include 'assets/search_handler.php';
+            include 'search_handler.php';
             if ($search_result != "emty") {
                 echo $search_result . "</tbody>
         </table>";
