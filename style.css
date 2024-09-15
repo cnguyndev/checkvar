@@ -1,0 +1,119 @@
+body {
+    background-color: fff;
+    padding: 0 10px;
+}
+
+p,
+a,
+summary {
+    font-size: 20px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.search-box {
+    position: relative;
+    /* Để đặt icon tìm kiếm ở bên trong */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    /* Ngăn chặn icon bị click */
+}
+
+.search-box:hover {
+    border-color: #007bff;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+details {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    /* Màu xanh lá cây */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    border-bottom: 2px solid #e7eaf0;
+    font-weight: bold;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafa;
+    border-bottom: 1px solid #e7eaf0;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+    border-bottom: 1px solid #e7eaf0;
+}
+
+tbody tr:not(:last-child) td {
+    border-bottom: none;
+}
